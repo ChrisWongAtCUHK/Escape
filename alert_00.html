@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+// generate html
+function escape(s) 
+{
+	// Warmup.
+	return '<script>console.log("'+s+'");<\/script>';
+}
+</script>
+</head>
+
+<body>
+<script>
+	document.write(escape("<\/script><script>alert('1')<\/script><script>"));
+</script>
+</body>
+</html>
