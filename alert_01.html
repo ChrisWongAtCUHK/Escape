@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+// generate html
+function escape(s) 
+{
+	// Escaping scheme courtesy of Adobe Systems, Inc.
+	s = s.replace(/"/g, '\\"');
+	return '<script>console.log("'+s+'");<\/script>';
+}
+</script>
+</head>
+
+<body>
+<script>
+	document.write(escape("Hello\\\")<\/script><script>alert('1');//"));
+</script>
+</body>
+</html>
